@@ -2057,5 +2057,63 @@
       <field type="uint16_t[4]" name="rpm" units="rpm">RPM (eRPM).</field>
       <field type="uint16_t[4]" name="count">count of telemetry packets received (wraps at 65535).</field>
     </message>
+    <message id="184216" name="YACHT_HUD">
+      <wip/>
+      <description>Data to be shown on the instruments panel of ChaoXing.1 Yacht.</description>
+      <!--   vehicle status   -->
+      <field type="uint32_t" name="time_boot_ms" units="ms">Timestamp (time since system boot).</field>
+      <field type="int16_t" name="roll" units="cdeg">roll</field>
+      <field type="int16_t" name="pitch" units="cdeg">pitch</field>
+      <field type="uint16_t" name="heading" units="cdeg">heading</field>
+      <field type="uint16_t" name="heading_sp" units="cdeg">heading set-point</field>
+      <field type="int16_t" name="yawspeed" units="cdeg/s">Yaw angular speed</field>
+      <field type="int16_t" name="yawspeed_sp" units="cdeg/s">Yaw angular speed set-point</field>
+      <field type="uint16_t" name="RTKYaw" units="cdeg">RTKYaw</field>
+      <field type="uint16_t" name="magYaw" units="cdeg">MagYaw</field>
+      <field type="uint16_t" name="course" units="cdeg">course of velocity</field>
+      <field type="int16_t" name="speed" units="cm/s">horizontal speed</field>
+      <field type="int16_t" name="vx" units="cm/s">front speed</field>
+      <field type="int16_t" name="vy" units="cm/s">right speed</field>
+      <field type="int16_t" name="vx_sp" units="cm/s">front speed set-point</field>
+      <field type="int16_t" name="vy_sp" units="cm/s">right speed set-point</field>
+      <!--   ESC status   -->
+      <field type="uint16_t"      name="vin1"     units="V">motor 1 inout voltage</field>
+      <field type="int16_t"      name="pout1"   units="10W">motor 1 output power</field>
+      <field type="int16_t"      name="iout1"    units="dA">motor 1 output current</field>
+      <field type="int16_t"       name="rpm1"   units="rpm">motor 1 rpm</field>
+      <field type="int16_t" name="motortemp1" units="cdegC">motor 1 temperature</field>
+      <field type="uint16_t"      name="vin2"     units="V">motor 2 inout voltage</field>
+      <field type="int16_t"      name="pout2"   units="10W">motor 2 output power</field>
+      <field type="int16_t"      name="iout2"    units="dA">motor 2 output current</field>
+      <field type="int16_t"       name="rpm2"   units="rpm">motor 2 rpm</field>
+      <field type="int16_t" name="motortemp2" units="cdegC">motor 2 temperature</field>
+      <field type="uint16_t"      name="vin3"     units="V">motor 3 inout voltage</field>
+      <field type="int16_t"      name="pout3"   units="10W">motor 3 output power</field>
+      <field type="int16_t"      name="iout3"    units="dA">motor 3 output current</field>
+      <field type="int16_t"       name="rpm3"   units="rpm">motor 3 rpm</field>
+      <field type="int16_t" name="motortemp3" units="cdegC">motor 3 temperature</field>
+      <field type="uint16_t"      name="vin4"     units="V">motor 4 inout voltage</field>
+      <field type="int16_t"      name="pout4"   units="10W">motor 4 output power</field>
+      <field type="int16_t"      name="iout4"    units="dA">motor 4 output current</field>
+      <field type="int16_t"       name="rpm4"   units="rpm">motor 4 rpm</field>
+      <field type="int16_t" name="motortemp4" units="cdegC">motor 4 temperature</field>
+      <field type="uint16_t"      name="vin5"     units="V">motor 5 inout voltage</field>
+      <field type="int16_t"      name="pout5"   units="10W">motor 5 output power</field>
+      <field type="int16_t"      name="iout5"    units="dA">motor 5 output current</field>
+      <field type="int16_t"       name="rpm5"   units="rpm">motor 5 rpm</field>
+      <field type="int16_t" name="motortemp5" units="cdegC">motor 5 temperature</field>
+      <field type="uint16_t"      name="vin6"     units="V">motor 6 inout voltage</field>
+      <field type="int16_t"      name="pout6"   units="10W">motor 6 output power</field>
+      <field type="int16_t"      name="iout6"    units="dA">motor 6 output current</field>
+      <field type="int16_t"       name="rpm6"   units="rpm">motor 6 rpm</field>
+      <field type="int16_t" name="motortemp6" units="cdegC">motor 6 temperature</field>
+      <!--   Encoder status   -->
+      <field type="int16_t" name="angleLeft" units="0.55cdeg">angle of left propeller</field>
+      <field type="int16_t" name="angleRight" units="0.55cdeg">angle of right propeller</field>
+      <field type="int16_t" name="angleLeftSP" units="0.55cdeg">angle set-point of left propeller</field>
+      <field type="int16_t" name="angleRightSP" units="0.55cdeg">angle set-point of right propeller</field>
+      <!--   Temperatures   -->
+      <field type="int16_t" name="imuTemp" units="cdegC">Temperature</field>
+    </message>
   </messages>
 </mavlink>
