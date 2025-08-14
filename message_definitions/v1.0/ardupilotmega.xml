@@ -2114,6 +2114,14 @@
       <field type="int16_t" name="angleRightSP" units="0.55cdeg">angle set-point of right propeller</field>
       <!--   Temperatures   -->
       <field type="int16_t" name="imuTemp" units="cdegC">Temperature</field>
+      <!--   Pilot input from rc   -->
+      <field type="int16_t" name="pilotThrottle" units="‰">pilot throttle input from rc</field>
+      <field type="int16_t" name="pilotRotation" units="‰">pilot rotation input from rc</field>
+      <field type="int16_t" name="pilotLateral" units="‰">pilot lateral input from rc</field>
+      <field type="int16_t" name="pilotPitch" units="‰">pilot pitch input from rc</field>
+      <!--   Output throttle   -->
+      <field type="int16_t" name="outThrottleLeft" units="‰">output throttle input from rc</field>
+      <field type="int16_t" name="outThrottleRight" units="‰">output throttle input from rc</field>
     </message>
   </messages>
 </mavlink>
